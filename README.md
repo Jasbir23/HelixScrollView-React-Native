@@ -1,46 +1,60 @@
 # Husna
+![HelixScrollView]("https://raw.githubusercontent.com/Jasbir23/HelixScrollView-React-Native/master/src/assets/husna.gif") <br />
+
 ## Helical-ScrollView-React-Native(iOS + Android)
 ## Props
 
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Property</th>
-            <th>Default</th>
-            <th>Option</th>
+            <th>Name</th>
+            <th>isRequired</th>
+            <th>Type</th>
             <th width="50%">Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>padder</td>
-            <td>true</td>
-            <td>boolean</td>
-            <td>Applies margin at all sides to Content section. Can be used with NativeBase View as well.</td>
+            <td>itemCount</td>
+            <td>YES</td>
+            <td>Integer</td>
+            <td>No of card components to be rendered</td>
         </tr>
         <tr>
-            <td>disableKBDismissScroll</td>
-            <td>false</td>
-            <td>boolean</td>
-            <td>Disables automatic scroll on focus.</td>
+            <td>renderCard</td>
+            <td>YES</td>
+            <td>Function callback</td>
+            <td>Render card component callback. Carries index of card.</td>
         </tr>
         <tr>
-            <td>enableResetScrollToCoords</td>
-            <td>true</td>
-            <td>boolean</td>
-            <td>Lets the user enable or disable automatic resetScrollToCoords.</td>
+            <td>backgroundImage</td>
+            <td>NO</td>
+            <td>String</td>
+            <td>URI of background image of content container</td>
+        </tr>
+        <tr>
+            <td>contentContainerStyle</td>
+            <td>NO</td>
+            <td>style</td>
+            <td>To add style to the content container, **along with other ScrollView props**</td>
         </tr>
     </tbody>
 </table>
 
 ## Usage
+Find detailed use case in **Examples** section <br />
 ```
 render(){
   return(
-<HelixScroll
-  itemCount={7}
-  renderCard={index => {
-    return(<Text>{index}</Text>)
-    }} />);
-  }
+    <HelixScroll
+    itemCount={7}
+    renderCard={index => {
+      return(
+        // return your custom component here
+        )
+    }} />
+  );
+}
 ```
+
+## Check out [Sample Expo App]("https://expo.io/@jaezzy23/husna")
