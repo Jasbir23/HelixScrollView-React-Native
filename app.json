@@ -1,0 +1,13 @@
+{
+   "expo": {
+    "name": "Husna",
+    "version": "1.0.0",
+    "sdkVersion": "20.0.0",
+    "android": {
+      "package": "com.geekyants.Husna",
+    },
+    "ios": {
+      "bundleIdentifier": "com.geekyants.Husna",
+    }
+   }
+ }
