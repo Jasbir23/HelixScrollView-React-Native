@@ -19,7 +19,7 @@ export default class ScrollSwagger extends Component {
       dataSource: undefined,
       maxScroll: 380 * 8 + 200,
       noOfItems: undefined,
-      singleItemHeight: 380
+      singleItemHeight: 320
     };
   }
   componentWillReceiveProps(props) {
@@ -61,9 +61,9 @@ export default class ScrollSwagger extends Component {
       rotArr.push(ang - 90 * can + "deg");
       can++;
     }
-    let loopArray = [1, 0.4, 0.15, 0.4];
+    let loopArray = [1, 0.6, 0.4, 0.6];
     let xArray = [0, -1000, 0, 1000];
-    let opArray = [1, 0.5, 0.25, 0.5];
+    let opArray = [1, 0.7, 0.5, 0.7];
     let pointer = ind;
     while (pointer > 0) {
       pointer--;
@@ -110,7 +110,7 @@ export default class ScrollSwagger extends Component {
           style={{
             width: width - 40,
             height: 300,
-            marginVertical: 40,
+            marginVertical: 10,
             justifyContent: "center",
             alignItems: "center",
             opacity: helixOp,
@@ -131,7 +131,7 @@ export default class ScrollSwagger extends Component {
         style={{
           width: width - 40,
           height: 300,
-          marginVertical: 40,
+          marginVertical: 10,
           justifyContent: "center",
           alignItems: "center",
           opacity: helixOp,

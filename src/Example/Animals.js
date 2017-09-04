@@ -8,8 +8,12 @@ import {
   Dimensions,
   StatusBar
 } from "react-native";
+import { Button } from "native-base";
 const { width, height } = Dimensions.get("window");
 export default class Animals extends Component {
+  static navigationOptions = ({ navigation }) => ({
+    header: null
+  });
   constructor(props) {
     super(props);
     this.state = {
@@ -119,24 +123,40 @@ export default class Animals extends Component {
 
         <View
           style={{
-            height: 70,
+            height: 80,
             width: width,
             top: 0,
             position: "absolute",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "rgba(0,0,0,0.3)"
+            backgroundColor: "rgba(0,0,0,0.3)",
+            flexDirection: "column"
           }}
         >
+          <Button
+            transparent
+            style={{ alignSelf: "center" }}
+            onPress={() => this.props.navigation.navigate("SocialTheme")}
+          >
+            <Text
+              style={{
+                fontSize: 25,
+                marginTop: 20,
+                fontWeight: "bold",
+                color: "rgba(255,255,255,0.7)"
+              }}
+            >
+              Animal Kingdom
+            </Text>
+          </Button>
           <Text
             style={{
-              fontSize: 25,
-              marginTop: 10,
-              fontWeight: "bold",
+              fontSize: 13,
+              marginTop: 5,
               color: "rgba(255,255,255,0.7)"
             }}
           >
-            Animal Kingdom
+            Tap to change
           </Text>
         </View>
       </View>
