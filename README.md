@@ -1,5 +1,5 @@
 # Husna
-![HelixScrollView]("https://raw.githubusercontent.com/Jasbir23/HelixScrollView-React-Native/master/src/assets/husna.gif") <br />
+![HelixScrollView](https://raw.githubusercontent.com/Jasbir23/HelixScrollView-React-Native/master/src/assets/husna.gif) <br />
 
 ## Helical-ScrollView-React-Native(iOS + Android)
 ## Props
@@ -57,4 +57,4 @@ render(){
 }
 ```
 
-## Check out [Sample Expo App]("https://expo.io/@jaezzy23/husna")
+## Check out [Sample Expo App](https://expo.io/@jaezzy23/husna)
